@@ -1,1 +1,23 @@
 require: rubocop-rails
+AllCops:
+  Exclude:
+    - "lib/tasks/auto_annotate_models.rake"
+    - "db/**/*"
+    - "config/**/*"
+    - "script/**/*"
+    - "bin/*"
+    - "Gemfile"
+    - "Rakefile"
+    - "spec/rails_helper.rb"
+
+# frozenコメント不要
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# 文字列はダブルクオート
+StringLiterals:
+  EnforcedStyle: double_quotes
+
+# クラスの一行目にコメント不要
+Style/Documentation:
+  Enabled: false
