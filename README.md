@@ -25,12 +25,13 @@ Things you may want to cover:
 
 ## setup
 
-1. データベース作成
+#### データベース作成
 ```shell
-$ docker compose run web rails db:create db:migrate 
+$ docker compose run web rails db:create db:migrate
 ```
-1. 起動確認
-起動し、localhost:3000にアクセスする
+#### 起動確認
+1. 起動する
 ```shell
-$ docker-compose up
+ $ docker-compose up
 ```
+2. http://localhost:3000/home で表示確認
