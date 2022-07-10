@@ -17,6 +17,7 @@ Rails7を使った開発用テンプレート
 |Rspec| テストツール| https://github.com/rspec/rspec-rails|
 |factory_bot| テストデータツール|https://github.com/thoughtbot/factory_bot_rails|
 |annotate| スキーマを要約したコメントをモデルに追加する| https://github.com/ctran/annotate_models|
+|active_hash| ハッシュをActiveRecordみたいに扱える| https://github.com/active-hash/active_hash|
 
 ## setup
 
