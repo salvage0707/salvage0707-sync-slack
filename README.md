@@ -35,3 +35,12 @@ $ docker compose run web rails db:create db:migrate
  $ docker-compose up
 ```
 2. http://localhost:3000/home で表示確認
+
+
+## Rspec
+
+#### 実行方法
+https://github.com/rspec/rspec-rails/tree/v6.0.0.rc1#running-specs
+```shell
+$ docker-compose run --rm web bundle exec rspec
+```
