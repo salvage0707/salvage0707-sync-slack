@@ -19,6 +19,7 @@ Rails7を使った開発用テンプレート
 |annotate| スキーマを要約したコメントをモデルに追加する| https://github.com/ctran/annotate_models|
 |active_hash| ハッシュをActiveRecordみたいに扱える| https://github.com/active-hash/active_hash|
 |rubocop| コードのリンター| https://github.com/rubocop/rubocop-rails <br> https://docs.rubocop.org/rubocop-rails/index.html <br> https://docs.rubocop.org/rubocop/compatibility.html|
+|active_type| modelの処理分割| https://github.com/makandra/active_type|
 
 
 ## setup
