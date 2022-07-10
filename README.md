@@ -22,3 +22,15 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## setup
+
+1. データベース作成
+```shell
+$ docker compose run web rails db:create db:migrate 
+```
+1. 起動確認
+起動し、localhost:3000にアクセスする
+```shell
+$ docker-compose up
+```
