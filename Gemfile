@@ -45,5 +45,8 @@ end
 group :development do
   gem "web-console"
   gem "annotate"
+  # https://github.com/rubocop/rubocop-rails
+  gem "rubocop"
+  gem "rubocop-rails", require: false
 end
 
