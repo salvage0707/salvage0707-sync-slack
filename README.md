@@ -1,27 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
 
-Things you may want to cover:
+Rails7を使った開発用テンプレート
 
-* Ruby version
+## 環境
 
-* System dependencies
+|ツール| バージョン| 説明|
+|Ruby on Rails | 7系| フレームワーク|
+|Postgresql| 12系| DB|
+|yarn | -| jsのパッケージ管理|
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## インストールされているもの
+| | 説明| 参考|
+|---|---|---|
+|Rspec| テストツール| https://github.com/rspec/rspec-rails|
+|factory_bot| テストデータツール|https://github.com/thoughtbot/factory_bot_rails|
+|annotate| スキーマを要約したコメントをモデルに追加する| https://github.com/ctran/annotate_models|
 
 ## setup
 
