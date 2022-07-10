@@ -18,6 +18,8 @@ Rails7を使った開発用テンプレート
 |factory_bot| テストデータツール|https://github.com/thoughtbot/factory_bot_rails|
 |annotate| スキーマを要約したコメントをモデルに追加する| https://github.com/ctran/annotate_models|
 |active_hash| ハッシュをActiveRecordみたいに扱える| https://github.com/active-hash/active_hash|
+|rubocop| コードのリンター| https://github.com/rubocop/rubocop-rails <br> https://docs.rubocop.org/rubocop-rails/index.html <br> https://docs.rubocop.org/rubocop/compatibility.html|
+
 
 ## setup
 
@@ -41,9 +43,15 @@ https://github.com/rspec/rspec-rails/tree/v6.0.0.rc1#running-specs
 $ docker-compose run --rm web bundle exec rspec
 ```
 
+## Rubocop
+
+#### チェック
+```shell
+$ docker-compose run --rm --no-deps web buncle exec rubocop
+```
 
 ## その他
 #### bundle install
 ```shell
-$ docker compose run --no-deps web bundle install 
+$ docker compose run --rm --no-deps web bundle install 
 ```
