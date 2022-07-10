@@ -39,3 +39,10 @@ https://github.com/rspec/rspec-rails/tree/v6.0.0.rc1#running-specs
 ```shell
 $ docker-compose run --rm web bundle exec rspec
 ```
+
+
+## その他
+#### bundle install
+```shell
+$ docker compose run --no-deps web bundle install 
+```
