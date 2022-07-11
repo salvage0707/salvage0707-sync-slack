@@ -20,7 +20,7 @@ Rails7を使った開発用テンプレート
 |active_hash| ハッシュをActiveRecordみたいに扱える| https://github.com/active-hash/active_hash|
 |active_type| modelの処理分割| https://github.com/makandra/active_type|
 |rubocop| コードのリンター| https://github.com/rubocop/rubocop-rails <br> https://docs.rubocop.org/rubocop-rails/index.html <br> https://docs.rubocop.org/rubocop/compatibility.html|
-|brakeman|||
+|brakeman| コードのセキュリティチェック| https://github.com/presidentbeef/brakeman|
 
 ## setup
 
