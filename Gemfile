@@ -51,4 +51,6 @@ group :development do
   # https://github.com/rubocop/rubocop-rails
   gem "rubocop"
   gem "rubocop-rails", require: false
+  # https://github.com/presidentbeef/brakeman
+  gem "brakeman"
 end
