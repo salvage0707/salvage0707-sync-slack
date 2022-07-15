@@ -39,6 +39,8 @@ gem "active_hash"
 # https://github.com/makandra/active_type
 gem "active_type"
 
+gem "dotenv-rails"
+
 group :development, :test do
   gem "debug", platforms: %i[mri mingw x64_mingw]
   gem "rspec-rails"

@@ -7,6 +7,7 @@ Rails7を使った開発用テンプレート
 ## 環境
 
 |ツール| バージョン| 説明|
+|---|---|---|
 |Ruby on Rails | 7系| フレームワーク|
 |Postgresql| 12系| DB|
 |yarn | -| jsのパッケージ管理|
@@ -24,11 +25,21 @@ Rails7を使った開発用テンプレート
 
 ## setup
 
+#### envファイル作成
+
+プロジェクトルートで実行
+```shell
+$ sh scripts/setup.sh
+```
+
 #### データベース作成
+
 ```shell
 $ docker compose run web rails db:create db:migrate
 ```
+
 #### 起動確認
+
 1. 起動する
 ```shell
  $ docker-compose up
@@ -39,6 +50,7 @@ $ docker compose run web rails db:create db:migrate
 ## Rspec
 
 #### 実行方法
+
 https://github.com/rspec/rspec-rails/tree/v6.0.0.rc1#running-specs
 ```shell
 $ docker-compose run --rm web bundle exec rspec
@@ -47,6 +59,7 @@ $ docker-compose run --rm web bundle exec rspec
 ## Rubocop
 
 #### チェック
+
 ```shell
 $ docker-compose run --rm --no-deps web buncle exec rubocop
 ```
@@ -54,12 +67,14 @@ $ docker-compose run --rm --no-deps web buncle exec rubocop
 ## brakeman
 
 #### チェック
+
 ```shell
 $ docker compose run --no-deps web bundle exec brakeman
 ```
 
 ## その他
 #### bundle install
+
 ```shell
 $ docker compose run --rm --no-deps web bundle install 
 ```
