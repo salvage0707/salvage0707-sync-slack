@@ -78,3 +78,10 @@ $ docker compose run --no-deps web bundle exec brakeman
 ```shell
 $ docker compose run --rm --no-deps web bundle install 
 ```
+
+#### rails-templateのアップデート
+
+```shell
+$ git remote add template git@github.com:salvage0707/rails-template-v1.git
+$ git pull template main
+```
