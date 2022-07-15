@@ -50,4 +50,9 @@ RSpec.configure do |config|
 
   # factory_bot
   config.include FactoryBot::Syntax::Methods
+
+  # devise
+  config.include Devise::Test::ControllerHelpers, type: :request
+  config.include Devise::Test::ControllerHelpers, type: :view
+  config.include Devise::Test::IntegrationHelpers, type: :system
 end
