@@ -42,6 +42,8 @@ gem "active_type"
 gem "dotenv-rails"
 
 gem "devise"
+gem "omniauth"
+gem "omniauth-slack"
 
 group :development, :test do
   gem "debug", platforms: %i[mri mingw x64_mingw]
