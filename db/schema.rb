@@ -10,9 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_15_143056) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_19_151703) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "slack_workspaces", force: :cascade do |t|
+    t.string "uuid", null: false, comment: "slack teamのuuid"
+    t.string "name", default: "", null: false, comment: "slack team名"
+    t.string "icon_url", comment: "slack teamのアイコンURL"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["uuid"], name: "index_slack_workspaces_on_uuid", unique: true
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
