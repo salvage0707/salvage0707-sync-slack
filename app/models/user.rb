@@ -18,4 +18,6 @@
 #
 class User < ApplicationRecord
   devise :database_authenticatable, :registerable, :validatable, :omniauthable
+
+  has_many :slack_users
 end

@@ -45,6 +45,8 @@ gem "devise"
 gem "omniauth"
 gem "omniauth-slack"
 
+gem "slack-ruby-client"
+
 group :development, :test do
   gem "debug", platforms: %i[mri mingw x64_mingw]
   gem "rspec-rails"

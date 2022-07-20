@@ -14,4 +14,8 @@
 #  index_slack_teams_on_uuid  (uuid) UNIQUE
 #
 class SlackTeam < ApplicationRecord
+  has_many :slack_users
+
+  validates :uuid, presence: true
+  validates :name, presence: true
 end

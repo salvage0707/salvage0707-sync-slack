@@ -3,8 +3,9 @@
 # Table name: slack_users
 #
 #  id                     :bigint           not null, primary key
-#  email                  :string           default(""), not null
+#  email(メールアドレス)  :string           default(""), not null
 #  image_url(アイコンURL) :string
+#  status(ステータス)     :integer          default(0), not null
 #  username(slack user名) :string           default(""), not null
 #  uuid(slack uuid)       :string           not null
 #  created_at             :datetime         not null
@@ -26,4 +27,8 @@
 class SlackUser < ApplicationRecord
   belongs_to :user
   belongs_to :slack_team
+
+  validates :uuid, presence: true
+  validates :username, presence: true
+  validates :email, presence: true
 end

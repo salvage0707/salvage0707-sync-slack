@@ -26,7 +26,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_19_153058) do
   create_table "slack_users", force: :cascade do |t|
     t.string "uuid", null: false, comment: "slack uuid"
     t.string "username", default: "", null: false, comment: "slack user名"
-    t.string "email", default: "", null: false
+    t.string "email", default: "", null: false, comment: "メールアドレス"
     t.string "image_url", comment: "アイコンURL"
     t.bigint "user_id", null: false
     t.bigint "slack_team_id", null: false
